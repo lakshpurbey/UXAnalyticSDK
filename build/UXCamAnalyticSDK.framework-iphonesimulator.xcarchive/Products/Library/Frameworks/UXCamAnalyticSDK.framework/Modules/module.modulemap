@@ -1,0 +1,11 @@
+framework module UXCamAnalyticSDK {
+  umbrella header "UXCamAnalyticSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module UXCamAnalyticSDK.Swift {
+  header "UXCamAnalyticSDK-Swift.h"
+  requires objc
+}

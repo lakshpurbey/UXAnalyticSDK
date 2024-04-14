@@ -1,0 +1,59 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-module-flags: -target x86_64-apple-ios17.2-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name UXCamAnalyticSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+import Swift
+@_exported import UXCamAnalyticSDK
+import _Concurrency
+import _StringProcessing
+public protocol AnalyticsService {
+  func trackEvent(name: Swift.String, properties: [Swift.String : Any]?)
+}
+@_hasMissingDesignatedInitializers public class FirebaseAnalyticsService : UXCamAnalyticSDK.AnalyticsService {
+  public func trackEvent(name: Swift.String, properties: [Swift.String : Any]?)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class MockAnalyticsService : UXCamAnalyticSDK.AnalyticsService {
+  public func trackEvent(name: Swift.String, properties: [Swift.String : Any]?)
+  @objc deinit
+}
+public protocol EventTracker {
+  func trackEvent(name: Swift.String, properties: [Swift.String : Any]?)
+}
+@_hasMissingDesignatedInitializers public class AnalyticsEventTracker : UXCamAnalyticSDK.EventTracker {
+  public func trackEvent(name: Swift.String, properties: [Swift.String : Any]?)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class MockEventTracker : UXCamAnalyticSDK.EventTracker {
+  public var trackedEvents: [(name: Swift.String, properties: [Swift.String : Any]?)]
+  public func trackEvent(name: Swift.String, properties: [Swift.String : Any]?)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class MySDK {
+  public static let shared: UXCamAnalyticSDK.MySDK
+  public func setEventTracker(_ eventTracker: any UXCamAnalyticSDK.EventTracker)
+  public func trackEvent(name: Swift.String, properties: [Swift.String : Any]?)
+  @objc deinit
+}
+public let __UXSwiftName: Swift.String
+public let __UXSwiftVersion: Swift.String
+@_hasMissingDesignatedInitializers public class EventTrack {
+  public static let shared: UXCamAnalyticSDK.EventTrack
+  public func trackEvent(name: Swift.String, properties: [Swift.String : Any]?)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class SessionManager {
+  public static let shared: UXCamAnalyticSDK.SessionManager
+  public func startSession()
+  public func isSessionActive() -> Swift.Bool
+  public func endSession()
+  public func getSessionStartTime() -> Foundation.Date?
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class CaptureSession {
+  public static let shared: UXCamAnalyticSDK.CaptureSession
+  public func startSession()
+  public func stopSession()
+  @objc deinit
+}

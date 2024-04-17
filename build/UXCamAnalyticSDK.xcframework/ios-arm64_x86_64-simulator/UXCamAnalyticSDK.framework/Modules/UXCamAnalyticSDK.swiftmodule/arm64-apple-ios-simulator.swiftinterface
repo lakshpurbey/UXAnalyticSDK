@@ -7,3 +7,33 @@ import Swift
 @_exported import UXCamAnalyticSDK
 import _Concurrency
 import _StringProcessing
+public protocol SessionDelegate : AnyObject {
+  func sessionDidStart()
+  func sessionDidStop()
+  func sessionDidFailToStartWithError(_ error: any Swift.Error)
+  func sessionDidFailToStopWithError(_ error: any Swift.Error)
+}
+public class SessionManager {
+  weak public var delegate: (any UXCamAnalyticSDK.SessionDelegate)?
+  public var currentUserID: Swift.String?
+  public var isSessionActive: Swift.Bool
+  final public let sessionStartTimeKey: Swift.String
+  public init()
+  public func startSession(withUserID userID: Swift.String)
+  public func authenticateUser(userID: Swift.String)
+  public func stopSession()
+  public func trackEvent(_ eventName: Swift.String, properties: [Swift.String : Any])
+  @objc deinit
+}
+public class CaptureSession : UXCamAnalyticSDK.SessionDelegate {
+  public static let shared: UXCamAnalyticSDK.CaptureSession
+  public init()
+  public func sessionDidFailToStopWithError(_ error: any Swift.Error)
+  public func sessionDidStart()
+  public func sessionDidStop()
+  public func sessionDidFailToStartWithError(_ error: any Swift.Error)
+  public func setupSession()
+  public func initializeResources()
+  public func updateUI()
+  @objc deinit
+}

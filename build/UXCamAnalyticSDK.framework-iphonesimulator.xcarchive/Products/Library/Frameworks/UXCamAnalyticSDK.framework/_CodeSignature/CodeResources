@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/UXCamAnalyticSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		a0XlMyPAJbKBaB/vG88csx4DwmI=
+		JgLIcEzJMDRa+b45Uy9u0DzU9l0=
 		</data>
 		<key>Modules/UXCamAnalyticSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		aDUt4wUROJc4n0P/hhuQoewgYoE=
+		veOyV4jUVN3LfJ1parYzGT8zQ+8=
 		</data>
 		<key>Modules/UXCamAnalyticSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/UXCamAnalyticSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		aDUt4wUROJc4n0P/hhuQoewgYoE=
+		veOyV4jUVN3LfJ1parYzGT8zQ+8=
 		</data>
 		<key>Modules/UXCamAnalyticSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		6xcsNyk8r4c5nD0uSaofmj4XxK4=
+		ZEkWlqLIAXpIcxldLRIpPPLZQ2k=
 		</data>
 		<key>Modules/UXCamAnalyticSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		a0XlMyPAJbKBaB/vG88csx4DwmI=
+		JgLIcEzJMDRa+b45Uy9u0DzU9l0=
 		</data>
 		<key>Modules/UXCamAnalyticSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		jHYSODfJKNbl8LSOiPgfPVjU9fo=
+		iY8Co57KUYhdU6BuFuVzvUIro90=
 		</data>
 		<key>Modules/UXCamAnalyticSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/UXCamAnalyticSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		jHYSODfJKNbl8LSOiPgfPVjU9fo=
+		iY8Co57KUYhdU6BuFuVzvUIro90=
 		</data>
 		<key>Modules/UXCamAnalyticSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		i4zGn2BmRoeYA9YvfO5lmeeTiC0=
+		ohepe9AsEjiyD51PyHsbmssQT3A=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,14 +81,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VzGsNO8IPC3A3x97ei1RRLAYq50/Cz4DjNBFU/D5y7k=
+			V3/KZHWph8rQ0T7U3d5RWNhO9mJxOTHhmV5q1AMmyXM=
 			</data>
 		</dict>
 		<key>Modules/UXCamAnalyticSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6CyIAE/rKjQVSQC026hBNN+jHiguyzK5N+SaKwl+dO0=
+			4qdHgVMvw6vorMUHDgNcFKizhnmYgCrUZYkeu4R6l9M=
 			</data>
 		</dict>
 		<key>Modules/UXCamAnalyticSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -102,28 +102,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6CyIAE/rKjQVSQC026hBNN+jHiguyzK5N+SaKwl+dO0=
+			4qdHgVMvw6vorMUHDgNcFKizhnmYgCrUZYkeu4R6l9M=
 			</data>
 		</dict>
 		<key>Modules/UXCamAnalyticSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7jcKC2CarzOiv69XbthZa89hSu39H2ShEaveG5rzFc8=
+			BKTN1h6ZXlizes5KN9EhgEB6DV3G2m9CydOiFGfS2h0=
 			</data>
 		</dict>
 		<key>Modules/UXCamAnalyticSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VzGsNO8IPC3A3x97ei1RRLAYq50/Cz4DjNBFU/D5y7k=
+			V3/KZHWph8rQ0T7U3d5RWNhO9mJxOTHhmV5q1AMmyXM=
 			</data>
 		</dict>
 		<key>Modules/UXCamAnalyticSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iQGKG3GRwcTdiPXLm/MF/8SRnmiTNw4NMrZPrVmdGrg=
+			DH7V4ODZ+O7iyHO24s524dLivuskgXmsWpwdWgUOgzs=
 			</data>
 		</dict>
 		<key>Modules/UXCamAnalyticSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -137,14 +137,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iQGKG3GRwcTdiPXLm/MF/8SRnmiTNw4NMrZPrVmdGrg=
+			DH7V4ODZ+O7iyHO24s524dLivuskgXmsWpwdWgUOgzs=
 			</data>
 		</dict>
 		<key>Modules/UXCamAnalyticSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dCalqaE6dDlLcVoPO6UmuclVRplhaGkEup7siB1CEBE=
+			FzW243kvo3prgI8wBbzC7qjoG7mf92aNtR8BRLbb61E=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

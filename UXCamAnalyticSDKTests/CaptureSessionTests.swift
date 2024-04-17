@@ -9,47 +9,47 @@ import XCTest
 
 @testable import UXCamAnalyticSDK
 
-class CaptureSessionTests: XCTestCase {
+public class CaptureSessionTests: XCTestCase {
         
     var captureSession: CaptureSession!
     var mockDelegate: MockCaptureDelegate!
     
-    override func setUp() {
+    public override func setUp() {
         super.setUp()
         captureSession = CaptureSession() // Instantiate CaptureSession
         mockDelegate = MockCaptureDelegate()
     }
     
-    override func tearDown() {
+    public override func tearDown() {
         captureSession = nil
         mockDelegate = nil
         super.tearDown()
     }
     
-    func testSessionDidStart() {
+    public func testSessionDidStart() {
         
         captureSession.sessionDidStart()
     }
         
 }
 
-class MockCaptureDelegate: SessionDelegate {
+public class MockCaptureDelegate: SessionDelegate {
     var sessionDidStartCalled = false
     var setupSessionCalled = false
     
-    func sessionDidStart() {
+    public func sessionDidStart() {
         sessionDidStartCalled = true
     }
     
-    func sessionDidStop() {
+    public func sessionDidStop() {
         // Implement if needed
     }
     
-    func sessionDidFailToStartWithError(_ error: Error) {
+    public func sessionDidFailToStartWithError(_ error: Error) {
         // Implement if needed
     }
     
-    func sessionDidFailToStopWithError(_ error: Error) {
+    public func sessionDidFailToStopWithError(_ error: Error) {
         // Implement if needed
     }
 }

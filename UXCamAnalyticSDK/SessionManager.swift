@@ -8,7 +8,7 @@
 import Foundation
 
 // SessionDelegate.swift
-protocol SessionDelegate: AnyObject {
+public protocol SessionDelegate: AnyObject {
     func sessionDidStart()
     func sessionDidStop()
     func sessionDidFailToStartWithError(_ error: Error)
@@ -16,13 +16,13 @@ protocol SessionDelegate: AnyObject {
 
 }
 
-class SessionManager {
+public class SessionManager {
     
-    weak var delegate: SessionDelegate?
-     var currentUserID: String?
-     var isSessionActive = false
+    public weak var delegate: SessionDelegate?
+    public var currentUserID: String?
+    public var isSessionActive = false
 
-    private let sessionStartTimeKey = "SessionStartTime"
+    public let sessionStartTimeKey = "SessionStartTime"
     
      var sessionStartTime: TimeInterval? {
         get {
@@ -33,7 +33,11 @@ class SessionManager {
         }
     }
     
-    func startSession(withUserID userID: String) {
+    public init() {
+           // Perform initialization here if needed
+       }
+    
+    public func startSession(withUserID userID: String) {
         // Start the session
                
                guard !isSessionActive else {
@@ -52,12 +56,12 @@ class SessionManager {
                delegate?.sessionDidStart()
     }
     
-    private func authenticateUser(userID: String) {
+    public func authenticateUser(userID: String) {
            // Code to authenticate the user with the provided user ID
            currentUserID = userID
        }
     
-    func stopSession() {
+    public func stopSession() {
         
         guard isSessionActive else {
                   delegate?.sessionDidFailToStopWithError(SessionError.noActiveSession)
@@ -84,7 +88,7 @@ class SessionManager {
               delegate?.sessionDidStop()
     }
     
-    func trackEvent(_ eventName: String, properties: [String: Any]) {
+    public func trackEvent(_ eventName: String, properties: [String: Any]) {
         // Track the event
         print("Tracking event '\(eventName)' with properties: \(properties)")
         

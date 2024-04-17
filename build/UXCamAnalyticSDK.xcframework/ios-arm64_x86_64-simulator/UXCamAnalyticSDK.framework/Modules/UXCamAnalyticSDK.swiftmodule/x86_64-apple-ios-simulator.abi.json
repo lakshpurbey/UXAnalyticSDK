@@ -15,6 +15,619 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "SessionDelegate",
+        "printedName": "SessionDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "sessionDidStart",
+            "printedName": "sessionDidStart()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16UXCamAnalyticSDK15SessionDelegateP15sessionDidStartyyF",
+            "mangledName": "$s16UXCamAnalyticSDK15SessionDelegateP15sessionDidStartyyF",
+            "moduleName": "UXCamAnalyticSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : UXCamAnalyticSDK.SessionDelegate>",
+            "sugared_genericSig": "<Self where Self : UXCamAnalyticSDK.SessionDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sessionDidStop",
+            "printedName": "sessionDidStop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16UXCamAnalyticSDK15SessionDelegateP14sessionDidStopyyF",
+            "mangledName": "$s16UXCamAnalyticSDK15SessionDelegateP14sessionDidStopyyF",
+            "moduleName": "UXCamAnalyticSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : UXCamAnalyticSDK.SessionDelegate>",
+            "sugared_genericSig": "<Self where Self : UXCamAnalyticSDK.SessionDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sessionDidFailToStartWithError",
+            "printedName": "sessionDidFailToStartWithError(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16UXCamAnalyticSDK15SessionDelegateP30sessionDidFailToStartWithErroryys0L0_pF",
+            "mangledName": "$s16UXCamAnalyticSDK15SessionDelegateP30sessionDidFailToStartWithErroryys0L0_pF",
+            "moduleName": "UXCamAnalyticSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : UXCamAnalyticSDK.SessionDelegate>",
+            "sugared_genericSig": "<Self where Self : UXCamAnalyticSDK.SessionDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sessionDidFailToStopWithError",
+            "printedName": "sessionDidFailToStopWithError(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16UXCamAnalyticSDK15SessionDelegateP29sessionDidFailToStopWithErroryys0L0_pF",
+            "mangledName": "$s16UXCamAnalyticSDK15SessionDelegateP29sessionDidFailToStopWithErroryys0L0_pF",
+            "moduleName": "UXCamAnalyticSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : UXCamAnalyticSDK.SessionDelegate>",
+            "sugared_genericSig": "<Self where Self : UXCamAnalyticSDK.SessionDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:16UXCamAnalyticSDK15SessionDelegateP",
+        "mangledName": "$s16UXCamAnalyticSDK15SessionDelegateP",
+        "moduleName": "UXCamAnalyticSDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SessionManager",
+        "printedName": "SessionManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "UXCamAnalyticSDK.SessionDelegate?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16UXCamAnalyticSDK14SessionManagerC8delegateAA0D8Delegate_pSgvp",
+            "mangledName": "$s16UXCamAnalyticSDK14SessionManagerC8delegateAA0D8Delegate_pSgvp",
+            "moduleName": "UXCamAnalyticSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UXCamAnalyticSDK.SessionDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SessionDelegate",
+                        "printedName": "UXCamAnalyticSDK.SessionDelegate",
+                        "usr": "s:16UXCamAnalyticSDK15SessionDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UXCamAnalyticSDK14SessionManagerC8delegateAA0D8Delegate_pSgvg",
+                "mangledName": "$s16UXCamAnalyticSDK14SessionManagerC8delegateAA0D8Delegate_pSgvg",
+                "moduleName": "UXCamAnalyticSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UXCamAnalyticSDK.SessionDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SessionDelegate",
+                        "printedName": "UXCamAnalyticSDK.SessionDelegate",
+                        "usr": "s:16UXCamAnalyticSDK15SessionDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UXCamAnalyticSDK14SessionManagerC8delegateAA0D8Delegate_pSgvs",
+                "mangledName": "$s16UXCamAnalyticSDK14SessionManagerC8delegateAA0D8Delegate_pSgvs",
+                "moduleName": "UXCamAnalyticSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UXCamAnalyticSDK14SessionManagerC8delegateAA0D8Delegate_pSgvM",
+                "mangledName": "$s16UXCamAnalyticSDK14SessionManagerC8delegateAA0D8Delegate_pSgvM",
+                "moduleName": "UXCamAnalyticSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "currentUserID",
+            "printedName": "currentUserID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16UXCamAnalyticSDK14SessionManagerC13currentUserIDSSSgvp",
+            "mangledName": "$s16UXCamAnalyticSDK14SessionManagerC13currentUserIDSSSgvp",
+            "moduleName": "UXCamAnalyticSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UXCamAnalyticSDK14SessionManagerC13currentUserIDSSSgvg",
+                "mangledName": "$s16UXCamAnalyticSDK14SessionManagerC13currentUserIDSSSgvg",
+                "moduleName": "UXCamAnalyticSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UXCamAnalyticSDK14SessionManagerC13currentUserIDSSSgvs",
+                "mangledName": "$s16UXCamAnalyticSDK14SessionManagerC13currentUserIDSSSgvs",
+                "moduleName": "UXCamAnalyticSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UXCamAnalyticSDK14SessionManagerC13currentUserIDSSSgvM",
+                "mangledName": "$s16UXCamAnalyticSDK14SessionManagerC13currentUserIDSSSgvM",
+                "moduleName": "UXCamAnalyticSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isSessionActive",
+            "printedName": "isSessionActive",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16UXCamAnalyticSDK14SessionManagerC02isD6ActiveSbvp",
+            "mangledName": "$s16UXCamAnalyticSDK14SessionManagerC02isD6ActiveSbvp",
+            "moduleName": "UXCamAnalyticSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UXCamAnalyticSDK14SessionManagerC02isD6ActiveSbvg",
+                "mangledName": "$s16UXCamAnalyticSDK14SessionManagerC02isD6ActiveSbvg",
+                "moduleName": "UXCamAnalyticSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UXCamAnalyticSDK14SessionManagerC02isD6ActiveSbvs",
+                "mangledName": "$s16UXCamAnalyticSDK14SessionManagerC02isD6ActiveSbvs",
+                "moduleName": "UXCamAnalyticSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UXCamAnalyticSDK14SessionManagerC02isD6ActiveSbvM",
+                "mangledName": "$s16UXCamAnalyticSDK14SessionManagerC02isD6ActiveSbvM",
+                "moduleName": "UXCamAnalyticSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sessionStartTimeKey",
+            "printedName": "sessionStartTimeKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16UXCamAnalyticSDK14SessionManagerC19sessionStartTimeKeySSvp",
+            "mangledName": "$s16UXCamAnalyticSDK14SessionManagerC19sessionStartTimeKeySSvp",
+            "moduleName": "UXCamAnalyticSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UXCamAnalyticSDK14SessionManagerC19sessionStartTimeKeySSvg",
+                "mangledName": "$s16UXCamAnalyticSDK14SessionManagerC19sessionStartTimeKeySSvg",
+                "moduleName": "UXCamAnalyticSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SessionManager",
+                "printedName": "UXCamAnalyticSDK.SessionManager",
+                "usr": "s:16UXCamAnalyticSDK14SessionManagerC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16UXCamAnalyticSDK14SessionManagerCACycfc",
+            "mangledName": "$s16UXCamAnalyticSDK14SessionManagerCACycfc",
+            "moduleName": "UXCamAnalyticSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "startSession",
+            "printedName": "startSession(withUserID:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16UXCamAnalyticSDK14SessionManagerC05startD010withUserIDySS_tF",
+            "mangledName": "$s16UXCamAnalyticSDK14SessionManagerC05startD010withUserIDySS_tF",
+            "moduleName": "UXCamAnalyticSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "authenticateUser",
+            "printedName": "authenticateUser(userID:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16UXCamAnalyticSDK14SessionManagerC16authenticateUser6userIDySS_tF",
+            "mangledName": "$s16UXCamAnalyticSDK14SessionManagerC16authenticateUser6userIDySS_tF",
+            "moduleName": "UXCamAnalyticSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopSession",
+            "printedName": "stopSession()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16UXCamAnalyticSDK14SessionManagerC04stopD0yyF",
+            "mangledName": "$s16UXCamAnalyticSDK14SessionManagerC04stopD0yyF",
+            "moduleName": "UXCamAnalyticSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackEvent",
+            "printedName": "trackEvent(_:properties:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16UXCamAnalyticSDK14SessionManagerC10trackEvent_10propertiesySS_SDySSypGtF",
+            "mangledName": "$s16UXCamAnalyticSDK14SessionManagerC10trackEvent_10propertiesySS_SDySSypGtF",
+            "moduleName": "UXCamAnalyticSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:16UXCamAnalyticSDK14SessionManagerC",
+        "mangledName": "$s16UXCamAnalyticSDK14SessionManagerC",
+        "moduleName": "UXCamAnalyticSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -22,6 +635,253 @@
         "moduleName": "UXCamAnalyticSDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CaptureSession",
+        "printedName": "CaptureSession",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CaptureSession",
+                "printedName": "UXCamAnalyticSDK.CaptureSession",
+                "usr": "s:16UXCamAnalyticSDK14CaptureSessionC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16UXCamAnalyticSDK14CaptureSessionC6sharedACvpZ",
+            "mangledName": "$s16UXCamAnalyticSDK14CaptureSessionC6sharedACvpZ",
+            "moduleName": "UXCamAnalyticSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CaptureSession",
+                    "printedName": "UXCamAnalyticSDK.CaptureSession",
+                    "usr": "s:16UXCamAnalyticSDK14CaptureSessionC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UXCamAnalyticSDK14CaptureSessionC6sharedACvgZ",
+                "mangledName": "$s16UXCamAnalyticSDK14CaptureSessionC6sharedACvgZ",
+                "moduleName": "UXCamAnalyticSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CaptureSession",
+                "printedName": "UXCamAnalyticSDK.CaptureSession",
+                "usr": "s:16UXCamAnalyticSDK14CaptureSessionC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16UXCamAnalyticSDK14CaptureSessionCACycfc",
+            "mangledName": "$s16UXCamAnalyticSDK14CaptureSessionCACycfc",
+            "moduleName": "UXCamAnalyticSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "sessionDidFailToStopWithError",
+            "printedName": "sessionDidFailToStopWithError(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16UXCamAnalyticSDK14CaptureSessionC29sessionDidFailToStopWithErroryys0L0_pF",
+            "mangledName": "$s16UXCamAnalyticSDK14CaptureSessionC29sessionDidFailToStopWithErroryys0L0_pF",
+            "moduleName": "UXCamAnalyticSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sessionDidStart",
+            "printedName": "sessionDidStart()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16UXCamAnalyticSDK14CaptureSessionC15sessionDidStartyyF",
+            "mangledName": "$s16UXCamAnalyticSDK14CaptureSessionC15sessionDidStartyyF",
+            "moduleName": "UXCamAnalyticSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sessionDidStop",
+            "printedName": "sessionDidStop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16UXCamAnalyticSDK14CaptureSessionC14sessionDidStopyyF",
+            "mangledName": "$s16UXCamAnalyticSDK14CaptureSessionC14sessionDidStopyyF",
+            "moduleName": "UXCamAnalyticSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sessionDidFailToStartWithError",
+            "printedName": "sessionDidFailToStartWithError(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16UXCamAnalyticSDK14CaptureSessionC30sessionDidFailToStartWithErroryys0L0_pF",
+            "mangledName": "$s16UXCamAnalyticSDK14CaptureSessionC30sessionDidFailToStartWithErroryys0L0_pF",
+            "moduleName": "UXCamAnalyticSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setupSession",
+            "printedName": "setupSession()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16UXCamAnalyticSDK14CaptureSessionC05setupE0yyF",
+            "mangledName": "$s16UXCamAnalyticSDK14CaptureSessionC05setupE0yyF",
+            "moduleName": "UXCamAnalyticSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initializeResources",
+            "printedName": "initializeResources()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16UXCamAnalyticSDK14CaptureSessionC19initializeResourcesyyF",
+            "mangledName": "$s16UXCamAnalyticSDK14CaptureSessionC19initializeResourcesyyF",
+            "moduleName": "UXCamAnalyticSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateUI",
+            "printedName": "updateUI()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16UXCamAnalyticSDK14CaptureSessionC8updateUIyyF",
+            "mangledName": "$s16UXCamAnalyticSDK14CaptureSessionC8updateUIyyF",
+            "moduleName": "UXCamAnalyticSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:16UXCamAnalyticSDK14CaptureSessionC",
+        "mangledName": "$s16UXCamAnalyticSDK14CaptureSessionC",
+        "moduleName": "UXCamAnalyticSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "SessionDelegate",
+            "printedName": "SessionDelegate",
+            "usr": "s:16UXCamAnalyticSDK15SessionDelegateP",
+            "mangledName": "$s16UXCamAnalyticSDK15SessionDelegateP"
+          }
         ]
       }
     ],
@@ -31,70 +891,70 @@
     {
       "filePath": "\/Users\/nchl\/Documents\/UXAnalyticSDK\/UXCamAnalyticSDK\/SessionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 478,
+      "offset": 511,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/nchl\/Documents\/UXAnalyticSDK\/UXCamAnalyticSDK\/SessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 523,
+      "offset": 555,
       "length": 18,
       "value": "\"SessionStartTime\""
     },
     {
       "filePath": "\/Users\/nchl\/Documents\/UXAnalyticSDK\/UXCamAnalyticSDK\/SessionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1419,
+      "offset": 1544,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nchl\/Documents\/UXAnalyticSDK\/UXCamAnalyticSDK\/SessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 2277,
+      "offset": 2408,
       "length": 17,
       "value": "\"sessionDuration\""
     },
     {
       "filePath": "\/Users\/nchl\/Documents\/UXAnalyticSDK\/UXCamAnalyticSDK\/SessionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2525,
+      "offset": 2656,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/nchl\/Documents\/UXAnalyticSDK\/UXCamAnalyticSDK\/SessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 2728,
+      "offset": 2866,
       "length": 62,
       "value": "\"Tracking event '\""
     },
     {
       "filePath": "\/Users\/nchl\/Documents\/UXAnalyticSDK\/UXCamAnalyticSDK\/SessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 2757,
+      "offset": 2895,
       "length": 34,
       "value": "\"' with properties: \""
     },
     {
       "filePath": "\/Users\/nchl\/Documents\/UXAnalyticSDK\/UXCamAnalyticSDK\/SessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 2789,
+      "offset": 2927,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nchl\/Documents\/UXAnalyticSDK\/UXCamAnalyticSDK\/CaptureSession.swift",
       "kind": "StringLiteral",
-      "offset": 810,
+      "offset": 919,
       "length": 27,
       "value": "\"Initializing resources...\""
     },
     {
       "filePath": "\/Users\/nchl\/Documents\/UXAnalyticSDK\/UXCamAnalyticSDK\/CaptureSession.swift",
       "kind": "StringLiteral",
-      "offset": 1017,
+      "offset": 1125,
       "length": 16,
       "value": "\"Updating UI...\""
     }

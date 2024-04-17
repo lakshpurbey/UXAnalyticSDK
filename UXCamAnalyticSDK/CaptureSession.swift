@@ -7,28 +7,33 @@
 
 import Foundation
 
-class CaptureSession : SessionDelegate {
+public class CaptureSession : SessionDelegate {
     
-    func sessionDidFailToStopWithError(_ error: Error) {
+    
+    public static let shared = CaptureSession()
+
+    public init() {}
+
+    public func sessionDidFailToStopWithError(_ error: Error) {
         
     }
     
-    func sessionDidStart() {
+    public func sessionDidStart() {
         
         // Additional logic to handle session start
         setupSession()
         
     }
     
-    func sessionDidStop() {
+    public func sessionDidStop() {
         
     }
     
-    func sessionDidFailToStartWithError(_ error: Error) {
+    public func sessionDidFailToStartWithError(_ error: Error) {
         
     }
     
-    private func setupSession() {
+    public func setupSession() {
         
         // For example, you could initialize some resources
         initializeResources()
@@ -37,14 +42,14 @@ class CaptureSession : SessionDelegate {
         updateUI()
         
     }
-    private func initializeResources() {
+    public func initializeResources() {
         // Code to initialize resources
         print("Initializing resources...")
         // For example, you could allocate memory, set up connections, etc.
         
     }
     
-    private func updateUI() {
+    public func updateUI() {
         // Code to update UI elements
         print("Updating UI...")
         // For example, you could change the appearance of UI components, display a loading indicator, etc.

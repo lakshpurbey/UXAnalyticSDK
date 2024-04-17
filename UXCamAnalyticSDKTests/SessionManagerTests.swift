@@ -9,25 +9,25 @@ import XCTest
 
 @testable import UXCamAnalyticSDK
 
-class SessionManagerTests: XCTestCase {
+public class SessionManagerTests: XCTestCase {
     
     var sessionManager: SessionManager!
     var mockDelegate: MockSessionDelegate!
     
-    override func setUp() {
+    public override func setUp() {
         super.setUp()
         sessionManager = SessionManager()
         mockDelegate = MockSessionDelegate()
         sessionManager.delegate = mockDelegate
     }
     
-    override func tearDown() {
+    public override func tearDown() {
         sessionManager = nil
         mockDelegate = nil
         super.tearDown()
     }
     
-    func testStartSession() {
+    public func testStartSession() {
         // Given
         let userID = "testUser"
         
@@ -44,7 +44,7 @@ class SessionManagerTests: XCTestCase {
     }
     
     
-    func testStopSession() {
+    public func testStopSession() {
         // Given
         sessionManager.isSessionActive = true
         sessionManager.sessionStartTime = Date().timeIntervalSince1970
@@ -60,7 +60,7 @@ class SessionManagerTests: XCTestCase {
         XCTAssertNil(sessionManager.currentUserID)
     }
     
-    func testStopSessionWhenNotActive() {
+    public func testStopSessionWhenNotActive() {
         sessionManager.isSessionActive = false
         
         sessionManager.stopSession()
@@ -71,25 +71,25 @@ class SessionManagerTests: XCTestCase {
 }
 
 // Mock SessionDelegate for testing
-class MockSessionDelegate: SessionDelegate {
+public class MockSessionDelegate: SessionDelegate {
     var sessionDidStartCalled = false
     var sessionDidStopCalled = false
     var sessionDidFailToStartWithErrorCalled = false
     var sessionDidFailToStopWithErrorCalled = false
     
-    func sessionDidStart() {
+    public func sessionDidStart() {
         sessionDidStartCalled = true
     }
     
-    func sessionDidStop() {
+    public func sessionDidStop() {
         sessionDidStopCalled = true
     }
     
-    func sessionDidFailToStartWithError(_ error: Error) {
+    public func sessionDidFailToStartWithError(_ error: Error) {
         sessionDidFailToStartWithErrorCalled = true
     }
     
-    func sessionDidFailToStopWithError(_ error: Error) {
+    public func sessionDidFailToStopWithError(_ error: Error) {
         sessionDidFailToStopWithErrorCalled = true
     }
 }

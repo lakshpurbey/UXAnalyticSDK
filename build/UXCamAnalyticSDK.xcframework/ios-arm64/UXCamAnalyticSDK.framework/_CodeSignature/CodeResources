@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/UXCamAnalyticSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		JP0V1wWv+0UdlswoIFUU6f/1PHM=
+		a0XlMyPAJbKBaB/vG88csx4DwmI=
 		</data>
 		<key>Modules/UXCamAnalyticSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		fnfhYZe7Gr4M45iONZNXg7WMHO4=
+		37tlhz/muxWkNbgLKrpwwI+tQ9U=
 		</data>
 		<key>Modules/UXCamAnalyticSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/UXCamAnalyticSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		fnfhYZe7Gr4M45iONZNXg7WMHO4=
+		37tlhz/muxWkNbgLKrpwwI+tQ9U=
 		</data>
 		<key>Modules/UXCamAnalyticSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		qA4WVHOrsb4VehYrBtA5FLsmmaE=
+		q0BO+pS4Di6Baj5mYzNsxTJgh+g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -61,14 +61,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			37K8/JKMPRyd5kafmce6MlOB13vBqqgR4w6ccGrkmno=
+			VzGsNO8IPC3A3x97ei1RRLAYq50/Cz4DjNBFU/D5y7k=
 			</data>
 		</dict>
 		<key>Modules/UXCamAnalyticSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Qeq7vtL5aoJIq1T/q0kLQljKcGUunccx40ej8lFwmmw=
+			3bpkK9BGRZwMMgjPVLZ0F5JVRPFGzIsYuot0Olk5IJw=
 			</data>
 		</dict>
 		<key>Modules/UXCamAnalyticSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -82,14 +82,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Qeq7vtL5aoJIq1T/q0kLQljKcGUunccx40ej8lFwmmw=
+			3bpkK9BGRZwMMgjPVLZ0F5JVRPFGzIsYuot0Olk5IJw=
 			</data>
 		</dict>
 		<key>Modules/UXCamAnalyticSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EUGSa4wBB5SmFPR9QJ0XQjiHYmuvPbxhyGzqEWlXqJk=
+			ZjuNRwKowMG3lLVJ1XdTrI7SY0nPAjA0sOl/BNiQVIQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -34,7 +34,7 @@
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D43852452BC688D800AD6F15"
+               BlueprintIdentifier = "D44DF0B42BCE499B00DF8B80"
                BuildableName = "UXCamAnalyticSDKTests.xctest"
                BlueprintName = "UXCamAnalyticSDKTests"
                ReferencedContainer = "container:UXCamAnalyticSDK.xcodeproj">

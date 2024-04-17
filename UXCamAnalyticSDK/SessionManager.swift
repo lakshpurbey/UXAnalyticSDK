@@ -7,41 +7,86 @@
 
 import Foundation
 
-public class SessionManager {
+// SessionDelegate.swift
+protocol SessionDelegate: AnyObject {
+    func sessionDidStart()
+    func sessionDidStop()
+    func sessionDidFailToStartWithError(_ error: Error)
+    func sessionDidFailToStopWithError(_ error: Error)
 
-    // Singleton instance
-    public static let shared = SessionManager()
-    
-    // UserDefaults key for session data
-    private let sessionKey = "uxcamkey"
-    private let startTimeKey = "sessionStartTime"
+}
 
+class SessionManager {
     
-    // Private initializer to enforce singleton pattern
-    private init() {}
+    weak var delegate: SessionDelegate?
+     var currentUserID: String?
+     var isSessionActive = false
+
+    private let sessionStartTimeKey = "SessionStartTime"
     
-    // Function to start a session
-    public func startSession() {
+     var sessionStartTime: TimeInterval? {
+        get {
+            return UserDefaults.standard.double(forKey: sessionStartTimeKey)
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: sessionStartTimeKey)
+        }
+    }
+    
+    func startSession(withUserID userID: String) {
+        // Start the session
+               
+               guard !isSessionActive else {
+                   delegate?.sessionDidFailToStartWithError(SessionError.sessionAlreadyActive)
+                   return
+               }
+               
+               // Authenticate user
+               authenticateUser(userID: userID)
+               
+               // Save session start time
+               sessionStartTime = Date().timeIntervalSince1970
+               
+               // Notify the delegate that the session has started
+               isSessionActive = true
+               delegate?.sessionDidStart()
+    }
+    
+    private func authenticateUser(userID: String) {
+           // Code to authenticate the user with the provided user ID
+           currentUserID = userID
+       }
+    
+    func stopSession() {
         
-        UserDefaults.standard.set(Date(), forKey: startTimeKey)
-        UserDefaults.standard.set(true, forKey: sessionKey)
-        UserDefaults.standard.synchronize()
-
+        guard isSessionActive else {
+                  delegate?.sessionDidFailToStopWithError(SessionError.noActiveSession)
+                  return
+              }
+              
+              // Retrieve session start time
+              guard let sessionStartTime = sessionStartTime else {
+                  // Session is not started yet
+                  return
+              }
+              
+              // Calculate session duration
+              let sessionEndTime = Date().timeIntervalSince1970
+              let sessionDuration = sessionEndTime - sessionStartTime
+              print("sessionDuration", sessionDuration)
+              
+              // Reset session start time
+              self.sessionStartTime = nil
+              
+              // Notify the delegate that the session has stopped
+              isSessionActive = false
+              currentUserID = nil
+              delegate?.sessionDidStop()
     }
     
-    // Function to check if a session is active
-    public func isSessionActive() -> Bool {
-        return UserDefaults.standard.bool(forKey: sessionKey)
+    func trackEvent(_ eventName: String, properties: [String: Any]) {
+        // Track the event
+        print("Tracking event '\(eventName)' with properties: \(properties)")
+        
     }
-    
-    // Function to end a session
-    public func endSession() {
-        UserDefaults.standard.removeObject(forKey: sessionKey)
-        UserDefaults.standard.removeObject(forKey: startTimeKey)
-    }
-    
-    // Function to get the session start time
-      public func getSessionStartTime() -> Date? {
-          return UserDefaults.standard.object(forKey: startTimeKey) as? Date
-      }
 }

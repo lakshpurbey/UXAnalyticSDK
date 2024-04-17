@@ -7,25 +7,50 @@
 
 import Foundation
 
-public class CaptureSession {
-
-    // Singleton instance
-    public static let shared = CaptureSession()
+class CaptureSession : SessionDelegate {
     
-    // Private initializer to enforce singleton pattern
-    private init() {}
-    
-    // Public function to start a session
-    public func startSession() {
-        // Code to start the session
-        print("Session started")
+    func sessionDidFailToStopWithError(_ error: Error) {
         
     }
     
-    // Public function to stop a session
-    public func stopSession() {
-        // Code to stop the session
-        print("Session stopped")
+    func sessionDidStart() {
+        
+        // Additional logic to handle session start
+        setupSession()
+        
     }
+    
+    func sessionDidStop() {
+        
+    }
+    
+    func sessionDidFailToStartWithError(_ error: Error) {
+        
+    }
+    
+    private func setupSession() {
+        
+        // For example, you could initialize some resources
+        initializeResources()
+        
+        // Or update UI elements
+        updateUI()
+        
+    }
+    private func initializeResources() {
+        // Code to initialize resources
+        print("Initializing resources...")
+        // For example, you could allocate memory, set up connections, etc.
+        
+    }
+    
+    private func updateUI() {
+        // Code to update UI elements
+        print("Updating UI...")
+        // For example, you could change the appearance of UI components, display a loading indicator, etc.
+        
+        
+    }
+    
 }
 
